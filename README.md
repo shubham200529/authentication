@@ -17,26 +17,7 @@ This is a full-stack web application built with Next.js, MongoDB, and Node.js th
 
 ---
 
-## Future Enhancements / Planned Features
 
-### Profile Enhancements
-- Profile picture upload and preview
-- Editable profile fields (name, bio, contact info)
-- Activity log to track user actions
-- Followers and following system to build social connections
-- Privacy controls for profile visibility
-- Dark and light mode theme toggle for better UX
-
-### Messaging Enhancements
-- Threaded or nested message replies for better conversation context
-- Real-time messaging via WebSockets or similar technologies
-- Message reactions (like, emoji reactions)
-- Ability to edit or delete sent messages
-- Typing indicators to show when a user is composing a message
-- Read receipts to inform users when messages are read
-- Support for file attachments in chat
-
----
 
 ## Tech Stack
 

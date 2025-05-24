@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Full-Stack Authentication web with Profile & Messaging
 
-## Getting Started
+This is a full-stack web application built with Next.js, MongoDB, and Node.js that provides user authentication (signup, login, logout), user profile management, and a messaging system. The app uses JWT for authentication and secure API routes with middleware.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- User registration with email and password
+- Secure login and logout with JWT-based authentication stored in httpOnly cookies
+- Password hashing with bcrypt for security
+- Protected routes using middleware that checks for valid JWT tokens
+- Profile page displaying user information
+- CRUD operations for user profile details (basic)
+- Messaging system allowing users to send and receive messages
+- Messages linked to user accounts with timestamps
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Enhancements / Planned Features
 
-## Learn More
+### Profile Enhancements
+- Profile picture upload and preview
+- Editable profile fields (name, bio, contact info)
+- Activity log to track user actions
+- Followers and following system to build social connections
+- Privacy controls for profile visibility
+- Dark and light mode theme toggle for better UX
 
-To learn more about Next.js, take a look at the following resources:
+### Messaging Enhancements
+- Threaded or nested message replies for better conversation context
+- Real-time messaging via WebSockets or similar technologies
+- Message reactions (like, emoji reactions)
+- Ability to edit or delete sent messages
+- Typing indicators to show when a user is composing a message
+- Read receipts to inform users when messages are read
+- Support for file attachments in chat
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- Frontend: Next.js, React, Tailwind CSS
+- Backend: Next.js API Routes, Node.js, Express (optional)
+- Database: MongoDB, Mongoose
+- Authentication: JWT, bcryptjs
+- Middleware for route protection
+- Toast notifications with react-hot-toast
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Setup and Installation
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/yourusername/your-project-name.git
+   cd your-project-name
